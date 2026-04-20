@@ -59,7 +59,9 @@ function buildScorers(rows: string[][]): ScorerResult {
   }
 
   return {
-    entries: entries.sort((a, b) => b.totalNumeric - a.totalNumeric),
+    entries: entries
+      .sort((a, b) => b.totalNumeric - a.totalNumeric)
+      .slice(0, 20),
     gameHeaders,
   };
 }
