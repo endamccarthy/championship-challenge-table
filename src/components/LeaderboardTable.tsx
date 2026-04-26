@@ -57,18 +57,22 @@ const columns = [
   columnHelper.accessor("munsterWinner", {
     header: "Munster Winner",
     cell: (info) => info.getValue(),
+    enableGlobalFilter: false,
   }),
   columnHelper.accessor("leinsterWinner", {
     header: "Leinster Winner",
     cell: (info) => info.getValue(),
+    enableGlobalFilter: false,
   }),
   columnHelper.accessor("topScorerMunster", {
     header: "Top Scorer (Munster)",
     cell: (info) => info.getValue(),
+    enableGlobalFilter: false,
   }),
   columnHelper.accessor("topScorerLeinster", {
     header: "Top Scorer (Leinster)",
     cell: (info) => info.getValue(),
+    enableGlobalFilter: false,
   }),
 ];
 
